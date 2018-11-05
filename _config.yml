@@ -4,19 +4,22 @@
 # ---------------------------------------------------------------
 
 # Site
-title: NexT
+title: LogicalShift
 subtitle:
 description:
-author: John Doe
+author: Григорий Мельников
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: ru
 date_format: '%Y-%m-%d'
+
+# Repository info
+repository: grmel/grmel.github.io
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
 url:
 baseurl:
-permalink: pretty
+permalink: /:year/:month/:day/:title/
 
 # Pagination
 paginate: 10
@@ -118,10 +121,10 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories/
+  categories: /categories/
+  tags: /tags/
   #about: /about/
   archives: /archives/
-  tags: /tags/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -560,7 +563,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
